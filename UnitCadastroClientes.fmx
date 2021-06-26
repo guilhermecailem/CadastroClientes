@@ -1,0 +1,1386 @@
+﻿object FormCadastroCliente: TFormCadastroCliente
+  Left = 0
+  Top = 0
+  Border.Styling = False
+  BorderIcons = [biHelp]
+  BorderStyle = Single
+  Caption = 'Cadastro de Clientes'
+  ClientHeight = 500
+  ClientWidth = 800
+  Position = ScreenCenter
+  StyleBook = StyleBook
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  ShowHint = False
+  DesignerMasterStyle = 0
+  object LAYOUT_upper: TLayout
+    Align = MostTop
+    Size.Width = 800.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object REC_upper_color: TRectangle
+      Align = Contents
+      Fill.Color = xFFF3F3F3
+      HitTest = False
+      Size.Width = 800.000000000000000000
+      Size.Height = 55.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.300000011920929000
+    end
+    object LABEL_title: TLabel
+      Align = MostLeft
+      StyledSettings = [Family, Style]
+      Size.Width = 300.000000000000000000
+      Size.Height = 55.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 26.000000000000000000
+      TextSettings.FontColor = xFF393939
+      TextSettings.HorzAlign = Center
+      Text = 'Cadastro de Clientes'
+    end
+    object LAYOUT_sair: TLayout
+      Align = MostRight
+      Padding.Left = 18.000000000000000000
+      Padding.Top = 18.000000000000000000
+      Padding.Right = 18.000000000000000000
+      Padding.Bottom = 18.000000000000000000
+      Position.X = 745.000000000000000000
+      Size.Width = 55.000000000000000000
+      Size.Height = 55.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object LINE_one: TLine
+        Align = Client
+        Cursor = crHandPoint
+        LineType = Diagonal
+        Size.Width = 19.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF393939
+        Stroke.Thickness = 4.000000000000000000
+        Stroke.Cap = Round
+        OnClick = ConfirmarSaidaShow
+        object LineOneColorAnimation: TColorAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Stroke.Color'
+          StartValue = claWhite
+          StopValue = claRed
+        end
+      end
+      object LINE_two: TLine
+        Align = Client
+        Cursor = crHandPoint
+        LineType = Diagonal
+        RotationAngle = 90.000000000000000000
+        Size.Width = 19.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF393939
+        Stroke.Thickness = 4.000000000000000000
+        Stroke.Cap = Round
+        OnClick = ConfirmarSaidaShow
+        object LineTwoColorAnimation: TColorAnimation
+          Duration = 0.200000002980232200
+          PropertyName = 'Stroke.Color'
+          StartValue = claWhite
+          StopValue = claRed
+        end
+      end
+    end
+  end
+  object LAYOUT_body: TLayout
+    Align = Client
+    Size.Width = 800.000000000000000000
+    Size.Height = 395.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    TabStop = False
+    object REC_body_color: TRectangle
+      Align = Contents
+      Fill.Color = claWhite
+      HitTest = False
+      Size.Width = 800.000000000000000000
+      Size.Height = 395.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.300000011920929000
+    end
+    object LAYOUT_body_center: TLayout
+      Align = Center
+      Size.Width = 800.000000000000000000
+      Size.Height = 400.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      TabStop = False
+      object LAYOUT_center_body_right: TLayout
+        Align = MostRight
+        Position.X = 400.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 400.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object LAYOUT_cep: TLayout
+          Align = Top
+          Padding.Left = 6.000000000000000000
+          Margins.Left = 8.000000000000000000
+          Margins.Top = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 382.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object LABEL_cep: TLabel
+            Align = MostTop
+            StyledSettings = [Style, FontColor]
+            Position.X = 6.000000000000000000
+            Size.Width = 376.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Corbel'
+            TextSettings.Font.Size = 18.000000000000000000
+            Text = 'CEP:'
+          end
+          object REC_cep: TRectangle
+            Align = Contents
+            Cursor = crIBeam
+            Fill.Color = claWhite
+            HitTest = False
+            Padding.Left = 6.000000000000000000
+            Margins.Left = 6.000000000000000000
+            Margins.Top = 24.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Size.Width = 370.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Thickness = 1.299999952316284000
+            XRadius = 8.000000000000000000
+            YRadius = 8.000000000000000000
+            object CepColorAnimation: TColorAnimation
+              Duration = 0.600000023841857900
+              PropertyName = 'Stroke.Color'
+              StartValue = claNull
+              StartFromCurrent = True
+              StopValue = xFF517AFA
+            end
+          end
+          object EDIT_cep: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Contents
+            StyleLookup = 'EditTransparent'
+            TabOrder = 5
+            TextSettings.Font.Size = 17.000000000000000000
+            Margins.Left = 12.000000000000000000
+            Margins.Top = 24.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, Style, FontColor]
+            OnTyping = EDIT_cepTyping
+            OnKeyDown = EDIT_cepKeyDown
+          end
+        end
+        object REC_separador: TRectangle
+          Align = MostLeft
+          Fill.Color = xFFE2E2E2
+          Margins.Top = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 2.000000000000000000
+          Size.Height = 396.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 1.000000000000000000
+          YRadius = 1.000000000000000000
+        end
+        object LAYOUT_endereço: TLayout
+          Align = Top
+          Margins.Left = 8.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 88.000000000000000000
+          Size.Width = 382.000000000000000000
+          Size.Height = 297.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object LAYOUT_endereço_left: TLayout
+            Align = Left
+            Size.Width = 191.000000000000000000
+            Size.Height = 297.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object LAYOUT_logradouro: TLayout
+              Align = MostTop
+              Padding.Left = 6.000000000000000000
+              Size.Width = 191.000000000000000000
+              Size.Height = 60.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 5
+              object LABEL_logradouro: TLabel
+                Align = MostTop
+                StyledSettings = [Family, Style, FontColor]
+                Position.X = 6.000000000000000000
+                Size.Width = 185.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 16.000000000000000000
+                Text = 'Logradouro:'
+              end
+              object REC_logradouro: TRectangle
+                Align = Contents
+                Cursor = crIBeam
+                Fill.Color = claWhite
+                HitTest = False
+                Padding.Left = 6.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 24.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 6.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 1.299999952316284000
+                XRadius = 8.000000000000000000
+                YRadius = 8.000000000000000000
+                object LogradouroColorAnimation: TColorAnimation
+                  Duration = 0.600000023841857900
+                  PropertyName = 'Stroke.Color'
+                  StartValue = claNull
+                  StartFromCurrent = True
+                  StopValue = xFF517AFA
+                end
+              end
+              object EDIT_logradouro: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Contents
+                StyleLookup = 'EditTransparent'
+                TabOrder = 6
+                TextSettings.Font.Size = 17.000000000000000000
+                Margins.Left = 12.000000000000000000
+                Margins.Top = 24.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 6.000000000000000000
+                Size.Width = 173.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Style, FontColor]
+              end
+            end
+            object LAYOUT_número: TLayout
+              Align = MostTop
+              Padding.Left = 6.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Position.Y = 68.000000000000000000
+              Size.Width = 191.000000000000000000
+              Size.Height = 60.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 6
+              object LABEL_numero: TLabel
+                Align = MostTop
+                StyledSettings = [Family, Style, FontColor]
+                Position.X = 6.000000000000000000
+                Size.Width = 185.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                Text = 'N'#250'mero:'
+              end
+              object REC_numero: TRectangle
+                Align = Contents
+                Cursor = crIBeam
+                Fill.Color = claWhite
+                HitTest = False
+                Padding.Left = 6.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 24.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 6.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 1.299999952316284000
+                XRadius = 8.000000000000000000
+                YRadius = 8.000000000000000000
+                object NumeroColorAnimation: TColorAnimation
+                  Duration = 0.600000023841857900
+                  PropertyName = 'Stroke.Color'
+                  StartValue = claNull
+                  StartFromCurrent = True
+                  StopValue = xFF517AFA
+                end
+              end
+              object EDIT_numero: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Contents
+                StyleLookup = 'EditTransparent'
+                TabOrder = 7
+                TextSettings.Font.Size = 17.000000000000000000
+                Margins.Left = 12.000000000000000000
+                Margins.Top = 24.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 6.000000000000000000
+                Size.Width = 173.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Style, FontColor]
+                OnKeyDown = EDIT_numeroKeyDown
+              end
+            end
+            object LAYOUT_complemento: TLayout
+              Align = MostTop
+              Padding.Left = 6.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Position.Y = 136.000000000000000000
+              Size.Width = 191.000000000000000000
+              Size.Height = 60.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 7
+              object LABEL_complemento: TLabel
+                Align = MostTop
+                StyledSettings = [Family, Style, FontColor]
+                Position.X = 6.000000000000000000
+                Size.Width = 185.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                Text = 'Complemento:'
+              end
+              object REC_complemento: TRectangle
+                Align = Contents
+                Cursor = crIBeam
+                Fill.Color = claWhite
+                HitTest = False
+                Padding.Left = 6.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 24.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 6.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 1.299999952316284000
+                XRadius = 8.000000000000000000
+                YRadius = 8.000000000000000000
+                object ComplementoColorAnimation: TColorAnimation
+                  Duration = 0.600000023841857900
+                  PropertyName = 'Stroke.Color'
+                  StartValue = claNull
+                  StartFromCurrent = True
+                  StopValue = xFF517AFA
+                end
+              end
+              object EDIT_complemento: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Contents
+                StyleLookup = 'EditTransparent'
+                TabOrder = 8
+                TextSettings.Font.Size = 17.000000000000000000
+                Margins.Left = 12.000000000000000000
+                Margins.Top = 24.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 6.000000000000000000
+                Size.Width = 173.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Style, FontColor]
+              end
+            end
+            object LAYOUT_bairro: TLayout
+              Align = MostTop
+              Padding.Left = 6.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Position.Y = 204.000000000000000000
+              Size.Width = 191.000000000000000000
+              Size.Height = 60.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 9
+              object LABEL_bairro: TLabel
+                Align = MostTop
+                StyledSettings = [Family, Style, FontColor]
+                Position.X = 6.000000000000000000
+                Size.Width = 185.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                Text = 'Bairro:'
+              end
+              object REC_bairro: TRectangle
+                Align = Contents
+                Cursor = crIBeam
+                Fill.Color = claWhite
+                HitTest = False
+                Padding.Left = 6.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 24.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 6.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 1.299999952316284000
+                XRadius = 8.000000000000000000
+                YRadius = 8.000000000000000000
+                object BairroColorAnimation: TColorAnimation
+                  Duration = 0.600000023841857900
+                  PropertyName = 'Stroke.Color'
+                  StartValue = claWhite
+                  StartFromCurrent = True
+                  StopValue = xFF517AFA
+                end
+              end
+              object EDIT_bairro: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Contents
+                StyleLookup = 'EditTransparent'
+                TabOrder = 9
+                DisableFocusEffect = True
+                TextSettings.Font.Size = 17.000000000000000000
+                Margins.Left = 12.000000000000000000
+                Margins.Top = 24.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 6.000000000000000000
+                Size.Width = 173.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Style, FontColor]
+              end
+            end
+          end
+          object LAYOUT_endereço_right: TLayout
+            Align = Right
+            Position.X = 191.000000000000000000
+            Size.Width = 191.000000000000000000
+            Size.Height = 297.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object LAYOUT_cidade: TLayout
+              Align = MostTop
+              Padding.Left = 6.000000000000000000
+              Size.Width = 191.000000000000000000
+              Size.Height = 60.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 9
+              object LABEL_cidade: TLabel
+                Align = MostTop
+                StyledSettings = [Family, Style, FontColor]
+                Position.X = 6.000000000000000000
+                Size.Width = 185.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                Text = 'Cidade:'
+              end
+              object REC_cidade: TRectangle
+                Align = Contents
+                Cursor = crIBeam
+                Fill.Color = claWhite
+                HitTest = False
+                Padding.Left = 6.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 24.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 6.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 1.299999952316284000
+                XRadius = 8.000000000000000000
+                YRadius = 8.000000000000000000
+                object CidadeColorAnimation: TColorAnimation
+                  Duration = 0.600000023841857900
+                  PropertyName = 'Stroke.Color'
+                  StartValue = claNull
+                  StartFromCurrent = True
+                  StopValue = xFF517AFA
+                end
+              end
+              object EDIT_cidade: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Contents
+                StyleLookup = 'EditTransparent'
+                TabOrder = 10
+                TextSettings.Font.Size = 17.000000000000000000
+                Margins.Left = 12.000000000000000000
+                Margins.Top = 24.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 6.000000000000000000
+                Size.Width = 173.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Style, FontColor]
+              end
+            end
+            object LAYOUT_pais: TLayout
+              Align = MostTop
+              Padding.Left = 6.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Position.Y = 136.000000000000000000
+              Size.Width = 191.000000000000000000
+              Size.Height = 60.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 12
+              object LABEL_país: TLabel
+                Align = MostTop
+                StyledSettings = [Family, Style, FontColor]
+                Position.X = 6.000000000000000000
+                Size.Width = 185.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                Text = 'Pa'#237's:'
+              end
+              object REC_pais: TRectangle
+                Align = Contents
+                Cursor = crIBeam
+                Fill.Color = claWhite
+                HitTest = False
+                Padding.Left = 6.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 24.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 6.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 1.299999952316284000
+                XRadius = 8.000000000000000000
+                YRadius = 8.000000000000000000
+                object PaisColorAnimation: TColorAnimation
+                  Duration = 0.600000023841857900
+                  PropertyName = 'Stroke.Color'
+                  StartValue = claNull
+                  StartFromCurrent = True
+                  StopValue = xFF517AFA
+                end
+              end
+              object EDIT_pais: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Contents
+                StyleLookup = 'EditTransparent'
+                TabOrder = 12
+                TextSettings.Font.Size = 17.000000000000000000
+                Margins.Left = 12.000000000000000000
+                Margins.Top = 24.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 6.000000000000000000
+                Size.Width = 173.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Style, FontColor]
+              end
+            end
+            object LAYOUT_estado: TLayout
+              Align = MostTop
+              Padding.Left = 6.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Position.Y = 68.000000000000000000
+              Size.Width = 191.000000000000000000
+              Size.Height = 60.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 10
+              object LABEL_estado: TLabel
+                Align = MostTop
+                StyledSettings = [Family, Style, FontColor]
+                Position.X = 6.000000000000000000
+                Size.Width = 185.000000000000000000
+                Size.Height = 25.000000000000000000
+                Size.PlatformDefault = False
+                TextSettings.Font.Size = 14.000000000000000000
+                Text = 'Estado:'
+              end
+              object REC_estado: TRectangle
+                Align = Contents
+                Cursor = crIBeam
+                Fill.Color = claWhite
+                HitTest = False
+                Padding.Left = 6.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 24.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 6.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 1.299999952316284000
+                XRadius = 8.000000000000000000
+                YRadius = 8.000000000000000000
+                object EstadoColorAnimation: TColorAnimation
+                  Duration = 0.600000023841857900
+                  PropertyName = 'Stroke.Color'
+                  StartValue = claNull
+                  StartFromCurrent = True
+                  StopValue = xFF517AFA
+                end
+              end
+              object EDIT_estado: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Contents
+                StyleLookup = 'EditTransparent'
+                TabOrder = 11
+                TextSettings.Font.Size = 17.000000000000000000
+                Margins.Left = 12.000000000000000000
+                Margins.Top = 24.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 6.000000000000000000
+                Size.Width = 173.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                StyledSettings = [Family, Style, FontColor]
+              end
+            end
+          end
+        end
+      end
+      object LAYOUT_center_body_left: TLayout
+        Align = MostLeft
+        Padding.Left = 8.000000000000000000
+        Padding.Right = 8.000000000000000000
+        Size.Width = 400.000000000000000000
+        Size.Height = 400.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        TabStop = False
+        object LAYOUT_nome: TLayout
+          Align = MostTop
+          ClipChildren = True
+          EnableDragHighlight = False
+          Padding.Left = 6.000000000000000000
+          Padding.Right = 20.000000000000000000
+          Margins.Top = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 384.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          TabStop = False
+          object LABEL_nome: TLabel
+            Align = MostTop
+            StyledSettings = [Style, FontColor]
+            Position.X = 6.000000000000000000
+            Size.Width = 358.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Corbel'
+            TextSettings.Font.Size = 18.000000000000000000
+            Text = 'Nome:'
+          end
+          object REC_nome: TRectangle
+            Align = Contents
+            Cursor = crIBeam
+            Fill.Color = claWhite
+            HitTest = False
+            Padding.Left = 6.000000000000000000
+            Margins.Left = 6.000000000000000000
+            Margins.Top = 24.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Thickness = 1.299999952316284000
+            XRadius = 8.000000000000000000
+            YRadius = 8.000000000000000000
+            object NomeColorAnimation: TColorAnimation
+              Duration = 0.600000023841857900
+              PropertyName = 'Stroke.Color'
+              StartValue = claBlack
+              StopValue = xFF517AFA
+            end
+          end
+          object EDIT_nome: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Contents
+            StyleLookup = 'EditTransparent'
+            TabOrder = 0
+            ReturnKeyType = Next
+            TextSettings.Font.Size = 17.000000000000000000
+            Margins.Left = 12.000000000000000000
+            Margins.Top = 24.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Size.Width = 366.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+        object LAYOUT_identidade: TLayout
+          Align = Top
+          Padding.Left = 6.000000000000000000
+          Padding.Right = 20.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 88.000000000000000000
+          Size.Width = 384.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object LABEL_identidade: TLabel
+            Align = MostTop
+            StyledSettings = [Style, FontColor]
+            Position.X = 6.000000000000000000
+            Size.Width = 358.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Corbel'
+            TextSettings.Font.Size = 18.000000000000000000
+            Text = 'Identidade:'
+          end
+          object REC_identidade: TRectangle
+            Align = Contents
+            Cursor = crIBeam
+            Fill.Color = claWhite
+            HitTest = False
+            Margins.Left = 6.000000000000000000
+            Margins.Top = 24.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Thickness = 1.299999952316284000
+            XRadius = 8.000000000000000000
+            YRadius = 8.000000000000000000
+            object IdentidadeColorAnimation: TColorAnimation
+              Duration = 0.600000023841857900
+              PropertyName = 'Stroke.Color'
+              StartValue = claBlack
+              StopValue = xFF517AFA
+            end
+          end
+          object EDIT_identidade: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Contents
+            StyleLookup = 'EditTransparent'
+            TabOrder = 1
+            TextSettings.Font.Size = 17.000000000000000000
+            Margins.Left = 12.000000000000000000
+            Margins.Top = 24.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Size.Width = 366.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, Style, FontColor]
+            OnKeyDown = EDIT_identidadeKeyDown
+          end
+        end
+        object LAYOUT_telefone: TLayout
+          Align = Top
+          Padding.Left = 6.000000000000000000
+          Padding.Right = 20.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 248.000000000000000000
+          Size.Width = 384.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object LABEL_telefone: TLabel
+            Align = MostTop
+            StyledSettings = [Style, FontColor]
+            Position.X = 6.000000000000000000
+            Size.Width = 358.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Corbel'
+            TextSettings.Font.Size = 18.000000000000000000
+            Text = 'Telefone:'
+          end
+          object REC_telefone: TRectangle
+            Align = Contents
+            Cursor = crIBeam
+            Fill.Color = claWhite
+            HitTest = False
+            Padding.Left = 6.000000000000000000
+            Margins.Left = 6.000000000000000000
+            Margins.Top = 24.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Thickness = 1.299999952316284000
+            XRadius = 8.000000000000000000
+            YRadius = 8.000000000000000000
+            object TelefoneColorAnimation: TColorAnimation
+              Duration = 0.600000023841857900
+              PropertyName = 'Stroke.Color'
+              StartValue = claBlack
+              StopValue = xFF517AFA
+            end
+          end
+          object EDIT_telefone: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Contents
+            StyleLookup = 'EditTransparent'
+            TabOrder = 3
+            TextSettings.Font.Size = 17.000000000000000000
+            Margins.Left = 12.000000000000000000
+            Margins.Top = 24.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Size.Width = 366.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, Style, FontColor]
+            OnKeyDown = EDIT_telefoneKeyDown
+          end
+        end
+        object LAYOUT_cpf: TLayout
+          Align = Top
+          EnableDragHighlight = False
+          Padding.Left = 6.000000000000000000
+          Padding.Right = 20.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 168.000000000000000000
+          Size.Width = 384.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          TabStop = False
+          object LABEL_cpf: TLabel
+            Align = MostTop
+            StyledSettings = [Style, FontColor]
+            Position.X = 6.000000000000000000
+            Size.Width = 358.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Corbel'
+            TextSettings.Font.Size = 18.000000000000000000
+            Text = 'CPF:'
+            TabStop = False
+          end
+          object REC_cpf: TRectangle
+            Align = Contents
+            Cursor = crIBeam
+            EnableDragHighlight = False
+            Fill.Color = claWhite
+            HitTest = False
+            Padding.Left = 6.000000000000000000
+            Margins.Left = 6.000000000000000000
+            Margins.Top = 24.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Thickness = 1.299999952316284000
+            XRadius = 8.000000000000000000
+            YRadius = 8.000000000000000000
+            object CpfColorAnimation: TColorAnimation
+              Duration = 0.600000023841857900
+              PropertyName = 'Stroke.Color'
+              StartValue = claBlack
+              StopValue = xFF517AFA
+            end
+          end
+          object EDIT_cpf: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Contents
+            StyleLookup = 'EditTransparent'
+            TabOrder = 2
+            TextSettings.Font.Size = 17.000000000000000000
+            Margins.Left = 12.000000000000000000
+            Margins.Top = 24.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Size.Width = 366.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, Style, FontColor]
+            OnKeyDown = EDIT_cpfKeyDown
+          end
+        end
+        object LAYOUT_email: TLayout
+          Align = Top
+          Padding.Left = 6.000000000000000000
+          Padding.Right = 20.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 328.000000000000000000
+          Size.Width = 384.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          TabStop = False
+          object LABEL_email: TLabel
+            Align = MostTop
+            StyledSettings = [Style, FontColor]
+            Position.X = 6.000000000000000000
+            Size.Width = 358.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Family = 'Corbel'
+            TextSettings.Font.Size = 18.000000000000000000
+            Text = 'Email:'
+            TabStop = False
+          end
+          object REC_email: TRectangle
+            Align = Contents
+            Cursor = crIBeam
+            Fill.Color = claWhite
+            HitTest = False
+            Padding.Left = 6.000000000000000000
+            Margins.Left = 6.000000000000000000
+            Margins.Top = 24.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Thickness = 1.299999952316284000
+            XRadius = 8.000000000000000000
+            YRadius = 8.000000000000000000
+            object EmailColorAnimation: TColorAnimation
+              Duration = 0.600000023841857900
+              PropertyName = 'Stroke.Color'
+              StartValue = claBlack
+              StopValue = xFF517AFA
+            end
+          end
+          object EDIT_email: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Contents
+            StyleLookup = 'EditTransparent'
+            TabOrder = 4
+            TextSettings.Font.Size = 17.000000000000000000
+            Margins.Left = 12.000000000000000000
+            Margins.Top = 24.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 6.000000000000000000
+            Size.Width = 366.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, Style, FontColor]
+          end
+        end
+      end
+    end
+  end
+  object LAYOUT_lower: TLayout
+    Align = MostBottom
+    Position.Y = 450.000000000000000000
+    Size.Width = 800.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object REC_lower_color: TRectangle
+      Align = Contents
+      Fill.Color = xFFEAEAEA
+      HitTest = False
+      Size.Width = 800.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.300000011920929000
+    end
+    object LAYOUT_button_cancelar: TLayout
+      Align = MostRight
+      Cursor = crHandPoint
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 30.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 650.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      OnClick = ConfirmarSaidaShow
+      object REC_cancelar: TRectangle
+        Align = Contents
+        Fill.Color = xFF3F3F3F
+        Size.Width = 120.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Thickness = 1.500000000000000000
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        OnClick = ConfirmarSaidaShow
+        object CancelarColorAnimation: TColorAnimation
+          Duration = 0.600000023841857900
+          PropertyName = 'Fill.Color'
+          StartValue = xFF3F3F3F
+          StopValue = xFF517AFA
+          Trigger = 'IsMouseOver=true'
+          TriggerInverse = 'IsMouseOver=false'
+        end
+      end
+      object LABEL_cancelar: TLabel
+        Align = Contents
+        StyledSettings = [Style]
+        Size.Width = 120.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Cancelar'
+        TabOrder = 1
+      end
+    end
+    object LAYOUT_button_cadastrar: TLayout
+      Align = Right
+      Cursor = crHandPoint
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 12.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 518.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnClick = cadastrarCliente
+      object REC_cadastrar: TRectangle
+        Align = Contents
+        Fill.Color = xFF3F3F3F
+        Size.Width = 120.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Thickness = 1.500000000000000000
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        OnClick = cadastrarCliente
+        object CadastrarColorAnimation: TColorAnimation
+          Duration = 0.600000023841857900
+          PropertyName = 'Fill.Color'
+          StartValue = xFF3F3F3F
+          StopValue = xFF517AFA
+          Trigger = 'IsMouseOver=true'
+          TriggerInverse = 'IsMouseOver=false'
+        end
+      end
+      object LABEL_cadastrar: TLabel
+        Align = Contents
+        StyledSettings = [Family, Style]
+        Size.Width = 120.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.FontColor = claWhite
+        TextSettings.HorzAlign = Center
+        Text = 'Cadastrar'
+        TabOrder = 1
+      end
+    end
+  end
+  object LAYOUT_confirmar_saida: TLayout
+    Align = Contents
+    Size.Width = 800.000000000000000000
+    Size.Height = 500.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 4
+    object REC_background_color: TRectangle
+      Align = Contents
+      Fill.Color = claBlack
+      Opacity = 0.699999988079071000
+      Size.Width = 800.000000000000000000
+      Size.Height = 500.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = ConfirmarSaidaHide
+    end
+    object LAYOUT_confirmar_body: TLayout
+      Align = Center
+      Size.Width = 300.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object REC_confirmar_body_background: TRectangle
+        Align = Contents
+        Fill.Color = claWhite
+        HitTest = False
+        Size.Width = 300.000000000000000000
+        Size.Height = 120.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = xFF2F2F2F
+        Stroke.Thickness = 2.500000000000000000
+        XRadius = 15.000000000000000000
+        YRadius = 15.000000000000000000
+      end
+      object LAYOUT_confirmar_descrição: TLayout
+        Align = MostTop
+        Size.Width = 300.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object LABEL_confirmar_descrição: TLabel
+          Align = Contents
+          StyledSettings = [Family, Style, FontColor]
+          HitTest = True
+          Size.Width = 300.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = 'Tem certeza que deseja sair?'
+          TabOrder = 0
+        end
+      end
+      object LAYOUT_confirmar_buttons: TLayout
+        Align = MostTop
+        Position.Y = 60.000000000000000000
+        Size.Width = 300.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object LAYOUT_button_sim: TLayout
+          Align = MostLeft
+          HitTest = True
+          Padding.Left = 50.000000000000000000
+          Padding.Top = 12.000000000000000000
+          Padding.Right = 12.000000000000000000
+          Padding.Bottom = 12.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object REC_button_sim: TRectangle
+            Align = Client
+            Cursor = crHandPoint
+            Fill.Color = claWhite
+            Size.Width = 88.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Thickness = 1.500000000000000000
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            OnClick = ConfirmarSaida
+            object LABEL_sim: TLabel
+              Align = Contents
+              StyledSettings = [FontColor]
+              Size.Width = 88.000000000000000000
+              Size.Height = 36.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.HorzAlign = Center
+              Text = 'Sim'
+              TabOrder = 0
+            end
+            object SimColorAnimation: TColorAnimation
+              Duration = 0.400000005960464500
+              PropertyName = 'Stroke.Color'
+              StartValue = claBlack
+              StopValue = xFF3939C3
+              Trigger = 'IsMouseOver=true'
+              TriggerInverse = 'IsMouseOver=false'
+            end
+          end
+        end
+        object LAYOUT_button_não: TLayout
+          Align = MostRight
+          HitTest = True
+          Padding.Left = 12.000000000000000000
+          Padding.Top = 12.000000000000000000
+          Padding.Right = 50.000000000000000000
+          Padding.Bottom = 12.000000000000000000
+          Position.X = 150.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 60.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object REC_button_não: TRectangle
+            Align = Client
+            Cursor = crHandPoint
+            Fill.Color = claWhite
+            Size.Width = 88.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Thickness = 1.500000000000000000
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            OnClick = ConfirmarSaidaHide
+            object LABEL_não: TLabel
+              Align = Contents
+              StyledSettings = [Family, Style, FontColor]
+              Size.Width = 88.000000000000000000
+              Size.Height = 36.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 18.000000000000000000
+              TextSettings.HorzAlign = Center
+              Text = 'N'#227'o'
+              TabOrder = 0
+            end
+            object NãoColorAnimation: TColorAnimation
+              Duration = 0.200000002980232200
+              PropertyName = 'Stroke.Color'
+              StartValue = claBlack
+              StopValue = xFF3939C3
+              Trigger = 'IsMouseOver=true'
+              TriggerInverse = 'IsMouseOver=false'
+            end
+          end
+        end
+      end
+    end
+  end
+  object StyleBook: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E3501060F456469745472616E73706172656E7403
+          9609061645646974315374796C65314C6162656C5374796C6531031101005450
+          463007544C61796F757400095374796C654E616D65060F456469745472616E73
+          706172656E7405416C69676E070643656E7465720A53697A652E576964746805
+          000000000000009607400B53697A652E4865696768740500000000000000F003
+          401453697A652E506C6174666F726D44656661756C7408085461624F72646572
+          02000012544163746976655374796C654F626A65637400095374796C654E616D
+          65060A6261636B67726F756E6405416C69676E0708436F6E74656E74730C536F
+          757263654C6F6F6B7570061B57696E646F7773203130204465736B746F707374
+          796C652E706E670A53697A652E576964746805000000000000009607400B5369
+          7A652E4865696768740500000000000000F003401453697A652E506C6174666F
+          726D44656661756C74080D416374697665547269676765720707466F63757365
+          640A4163746976654C696E6B0E010E436170496E736574732E4C656674050000
+          0000000000E001400D436170496E736574732E546F700500000000000000E001
+          400F436170496E736574732E52696768740500000000000000E0014010436170
+          496E736574732E426F74746F6D0500000000000000E001400F536F7572636552
+          6563742E4C6566740500000000000000AB06400E536F75726365526563742E54
+          6F700500000000000000B8054010536F75726365526563742E52696768740500
+          000000000000D2064011536F75726365526563742E426F74746F6D0500000000
+          000000F2054000010E436170496E736574732E4C6566740500000000000000A0
+          02400D436170496E736574732E546F700500000000000000A002400F43617049
+          6E736574732E52696768740500000000000000A0024010436170496E73657473
+          2E426F74746F6D0500000000000000A00240055363616C650500000000000000
+          C0FF3F0F536F75726365526563742E4C65667405000000000000008007400E53
+          6F75726365526563742E546F70050000000000000086064010536F7572636552
+          6563742E526967687405000000000000009D074011536F75726365526563742E
+          426F74746F6D0500000000000000B2064000010E436170496E736574732E4C65
+          66740500000000000000E002400D436170496E736574732E546F700500000000
+          000000E002400F436170496E736574732E52696768740500000000000000E002
+          4010436170496E736574732E426F74746F6D0500000000000000E00240055363
+          616C6505000000000000008000400F536F75726365526563742E4C6566740500
+          000000000080A807400E536F75726365526563742E546F700500000000000000
+          AE064010536F75726365526563742E52696768740500000000000080CF074011
+          536F75726365526563742E426F74746F6D0500000000000000E8064000000A53
+          6F757263654C696E6B0E010E436170496E736574732E4C656674050000000000
+          0000E001400D436170496E736574732E546F700500000000000000E001400F43
+          6170496E736574732E52696768740500000000000000E0014010436170496E73
+          6574732E426F74746F6D0500000000000000E001400F536F7572636552656374
+          2E4C6566740500000000000000AB06400E536F75726365526563742E546F7005
+          00000000000000B4054010536F75726365526563742E52696768740500000000
+          000000D2064011536F75726365526563742E426F74746F6D0500000000000000
+          EE054000010E436170496E736574732E4C6566740500000000000000A002400D
+          436170496E736574732E546F700500000000000000A002400F436170496E7365
+          74732E52696768740500000000000000A0024010436170496E736574732E426F
+          74746F6D0500000000000000A00240055363616C650500000000000000C0FF3F
+          0F536F75726365526563742E4C6566740500000000000000FE06400E536F7572
+          6365526563742E546F700500000000000000FE054010536F7572636552656374
+          2E526967687405000000000000809C074011536F75726365526563742E426F74
+          746F6D0500000000000000AB064000010E436170496E736574732E4C65667405
+          00000000000000E002400D436170496E736574732E546F700500000000000000
+          E002400F436170496E736574732E52696768740500000000000000E002401043
+          6170496E736574732E426F74746F6D0500000000000000E00240055363616C65
+          05000000000000008000400F536F75726365526563742E4C6566740500000000
+          000080AA07400E536F75726365526563742E546F700500000000000000B00640
+          10536F75726365526563742E52696768740500000000000080D1074011536F75
+          726365526563742E426F74746F6D0500000000000000EA0640000013546F7563
+          68416E696D6174696F6E2E4C696E6B0E00000007544C61796F75740009537479
+          6C654E616D650607636F6E74656E7405416C69676E0706436C69656E74064C6F
+          636B6564090C4D617267696E732E4C6566740500000000000000C000400B4D61
+          7267696E732E546F700500000000000000C000400D4D617267696E732E526967
+          68740500000000000000C000400E4D617267696E732E426F74746F6D05000000
+          00000000C000400A53697A652E57696474680500000000000000F206400B5369
+          7A652E4865696768740500000000000000C003401453697A652E506C6174666F
+          726D44656661756C7408000007544C61796F757400095374796C654E616D6506
+          07627574746F6E7305416C69676E07055269676874064C6F636B6564090B4D61
+          7267696E732E546F7005000000000000008000400D4D617267696E732E526967
+          687405000000000000008000400E4D617267696E732E426F74746F6D05000000
+          000000008000400A506F736974696F6E2E580500000000000000F806400A506F
+          736974696F6E2E5905000000000000008000400A53697A652E57696474680500
+          000000000000C804400B53697A652E4865696768740500000000000000D00340
+          1453697A652E506C6174666F726D44656661756C740800000C5442727573684F
+          626A65637400095374796C654E616D65060A666F726567726F756E640B427275
+          73682E436F6C6F720708636C61426C61636B00000C5442727573684F626A6563
+          7400095374796C654E616D65060973656C656374696F6E0B42727573682E436F
+          6C6F72070978374632413936464600000B54466F6E744F626A65637400095374
+          796C654E616D650604666F6E74000006544C6162656C00095374796C654E616D
+          65060670726F6D7074064C6F636B656409074F70616369747905000000000000
+          0080FE3F0B5374796C654C6F6F6B7570061645646974315374796C65314C6162
+          656C5374796C65310756697369626C65080000005450463007544C61796F7574
+          00095374796C654E616D65061645646974315374796C65314C6162656C537479
+          6C653105416C69676E070643656E7465720A53697A652E576964746805000000
+          000000009607400B53697A652E4865696768740500000000000000F003401453
+          697A652E506C6174666F726D44656661756C74080756697369626C6508085461
+          624F7264657202010005545465787400095374796C654E616D65060474657874
+          05416C69676E0706436C69656E74064C6F636B6564090748697454657374080A
+          53697A652E576964746805000000000000009607400B53697A652E4865696768
+          740500000000000000F003401453697A652E506C6174666F726D44656661756C
+          7408000000}
+      end>
+    Left = 696
+    Top = 8
+  end
+  object LAYOUT_loading: TLayout
+    Align = Contents
+    HitTest = True
+    Size.Width = 800.000000000000000000
+    Size.Height = 395.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 9
+    object REC_loading_background: TRectangle
+      Align = Contents
+      Fill.Color = claBlack
+      HitTest = False
+      Opacity = 0.600000023841857900
+      Size.Width = 800.000000000000000000
+      Size.Height = 395.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object CIRCLE_loading: TCircle
+      Align = Center
+      Fill.Kind = None
+      HitTest = False
+      Size.Width = 54.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFF8C2A2A
+      Stroke.Thickness = 8.000000000000000000
+      Stroke.Cap = Round
+      Stroke.Dash = Dot
+      object CircleFloatAnimation: TFloatAnimation
+        Duration = 1.600000023841858000
+        Loop = True
+        PropertyName = 'RotationAngle'
+        StartValue = 0.000000000000000000
+        StopValue = 360.000000000000000000
+      end
+    end
+  end
+  object NetHTTPRequest: TNetHTTPRequest
+    Asynchronous = False
+    ConnectionTimeout = 60000
+    ResponseTimeout = 60000
+    Client = NetHTTPClient
+    Left = 536
+    Top = 8
+  end
+  object NetHTTPClient: TNetHTTPClient
+    Asynchronous = False
+    ConnectionTimeout = 60000
+    ResponseTimeout = 60000
+    HandleRedirects = True
+    AllowCookies = True
+    UserAgent = 'Embarcadero URI Client/1.0'
+    Left = 624
+    Top = 8
+  end
+  object BindingsList: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 455
+    Top = 7
+  end
+end
