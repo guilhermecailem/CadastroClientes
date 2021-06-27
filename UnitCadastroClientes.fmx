@@ -5,7 +5,7 @@
   BorderIcons = [biHelp]
   BorderStyle = Single
   Caption = 'Cadastro de Clientes'
-  ClientHeight = 500
+  ClientHeight = 520
   ClientWidth = 800
   Position = ScreenCenter
   StyleBook = StyleBook
@@ -31,11 +31,12 @@
     end
     object LABEL_title: TLabel
       Align = MostLeft
-      StyledSettings = [Family, Style]
-      Size.Width = 300.000000000000000000
+      StyledSettings = [Family]
+      Size.Width = 273.000000000000000000
       Size.Height = 55.000000000000000000
       Size.PlatformDefault = False
       TextSettings.Font.Size = 26.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
       TextSettings.FontColor = xFF393939
       TextSettings.HorzAlign = Center
       Text = 'Cadastro de Clientes'
@@ -93,7 +94,7 @@
   object LAYOUT_body: TLayout
     Align = Client
     Size.Width = 800.000000000000000000
-    Size.Height = 395.000000000000000000
+    Size.Height = 415.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
     TabStop = False
@@ -102,7 +103,7 @@
       Fill.Color = claWhite
       HitTest = False
       Size.Width = 800.000000000000000000
-      Size.Height = 395.000000000000000000
+      Size.Height = 415.000000000000000000
       Size.PlatformDefault = False
       Stroke.Thickness = 0.300000011920929000
     end
@@ -132,19 +133,40 @@
           Size.Height = 60.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
+          object REC_cep_upper: TRectangle
+            Align = Contents
+            Corners = [TopLeft, TopRight]
+            Fill.Color = xFF598AA9
+            HitTest = False
+            Margins.Left = 6.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 34.000000000000000000
+            Size.Width = 370.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Thickness = 1.299999952316284000
+            XRadius = 8.000000000000000000
+            YRadius = 8.000000000000000000
+          end
           object LABEL_cep: TLabel
             Align = MostTop
-            StyledSettings = [Style, FontColor]
-            Position.X = 6.000000000000000000
-            Size.Width = 376.000000000000000000
+            StyledSettings = [Style]
+            Margins.Left = 3.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Position.X = 9.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 373.000000000000000000
             Size.Height = 17.000000000000000000
             Size.PlatformDefault = False
             TextSettings.Font.Family = 'Corbel'
             TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.FontColor = claWhite
             Text = 'CEP:'
           end
           object REC_cep: TRectangle
             Align = Contents
+            Corners = [BottomLeft, BottomRight]
             Cursor = crIBeam
             Fill.Color = claWhite
             HitTest = False
@@ -188,11 +210,11 @@
         object REC_separador: TRectangle
           Align = MostLeft
           Fill.Color = xFFE2E2E2
-          Margins.Top = 2.000000000000000000
-          Margins.Bottom = 2.000000000000000000
-          Position.Y = 2.000000000000000000
+          Margins.Top = -3.000000000000000000
+          Margins.Bottom = -3.000000000000000000
+          Position.Y = -3.000000000000000000
           Size.Width = 2.000000000000000000
-          Size.Height = 396.000000000000000000
+          Size.Height = 406.000000000000000000
           Size.PlatformDefault = False
           Stroke.Kind = None
           XRadius = 1.000000000000000000
@@ -222,18 +244,37 @@
               Size.Height = 60.000000000000000000
               Size.PlatformDefault = False
               TabOrder = 5
+              object REC_logradouro_upper: TRectangle
+                Align = Contents
+                Corners = [TopLeft, TopRight]
+                Fill.Color = xFF598AA9
+                HitTest = False
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 2.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 34.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 24.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 1.299999952316284000
+                XRadius = 8.000000000000000000
+                YRadius = 8.000000000000000000
+              end
               object LABEL_logradouro: TLabel
                 Align = MostTop
-                StyledSettings = [Family, Style, FontColor]
-                Position.X = 6.000000000000000000
-                Size.Width = 185.000000000000000000
+                StyledSettings = [Family, Style]
+                Margins.Left = 3.000000000000000000
+                Position.X = 9.000000000000000000
+                Size.Width = 182.000000000000000000
                 Size.Height = 25.000000000000000000
                 Size.PlatformDefault = False
                 TextSettings.Font.Size = 16.000000000000000000
+                TextSettings.FontColor = claWhite
                 Text = 'Logradouro:'
               end
               object REC_logradouro: TRectangle
                 Align = Contents
+                Corners = [BottomLeft, BottomRight]
                 Cursor = crIBeam
                 Fill.Color = claWhite
                 HitTest = False
@@ -281,18 +322,37 @@
               Size.Height = 60.000000000000000000
               Size.PlatformDefault = False
               TabOrder = 6
+              object REC_numero_upper: TRectangle
+                Align = Contents
+                Corners = [TopLeft, TopRight]
+                Fill.Color = xFF598AA9
+                HitTest = False
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 2.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 34.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 24.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 1.299999952316284000
+                XRadius = 8.000000000000000000
+                YRadius = 8.000000000000000000
+              end
               object LABEL_numero: TLabel
                 Align = MostTop
-                StyledSettings = [Family, Style, FontColor]
-                Position.X = 6.000000000000000000
-                Size.Width = 185.000000000000000000
+                StyledSettings = [Family, Style]
+                Margins.Left = 3.000000000000000000
+                Position.X = 9.000000000000000000
+                Size.Width = 182.000000000000000000
                 Size.Height = 25.000000000000000000
                 Size.PlatformDefault = False
                 TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.FontColor = claWhite
                 Text = 'N'#250'mero:'
               end
               object REC_numero: TRectangle
                 Align = Contents
+                Corners = [BottomLeft, BottomRight]
                 Cursor = crIBeam
                 Fill.Color = claWhite
                 HitTest = False
@@ -341,18 +401,37 @@
               Size.Height = 60.000000000000000000
               Size.PlatformDefault = False
               TabOrder = 7
+              object REC_complemento_upper: TRectangle
+                Align = Contents
+                Corners = [TopLeft, TopRight]
+                Fill.Color = xFF598AA9
+                HitTest = False
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 2.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 34.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 24.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 1.299999952316284000
+                XRadius = 8.000000000000000000
+                YRadius = 8.000000000000000000
+              end
               object LABEL_complemento: TLabel
                 Align = MostTop
-                StyledSettings = [Family, Style, FontColor]
-                Position.X = 6.000000000000000000
-                Size.Width = 185.000000000000000000
+                StyledSettings = [Family, Style]
+                Margins.Left = 3.000000000000000000
+                Position.X = 9.000000000000000000
+                Size.Width = 182.000000000000000000
                 Size.Height = 25.000000000000000000
                 Size.PlatformDefault = False
                 TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.FontColor = claWhite
                 Text = 'Complemento:'
               end
               object REC_complemento: TRectangle
                 Align = Contents
+                Corners = [BottomLeft, BottomRight]
                 Cursor = crIBeam
                 Fill.Color = claWhite
                 HitTest = False
@@ -400,18 +479,37 @@
               Size.Height = 60.000000000000000000
               Size.PlatformDefault = False
               TabOrder = 9
+              object REC_bairro_upper: TRectangle
+                Align = Contents
+                Corners = [TopLeft, TopRight]
+                Fill.Color = xFF598AA9
+                HitTest = False
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 2.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 34.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 24.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 1.299999952316284000
+                XRadius = 8.000000000000000000
+                YRadius = 8.000000000000000000
+              end
               object LABEL_bairro: TLabel
                 Align = MostTop
-                StyledSettings = [Family, Style, FontColor]
-                Position.X = 6.000000000000000000
-                Size.Width = 185.000000000000000000
+                StyledSettings = [Family, Style]
+                Margins.Left = 3.000000000000000000
+                Position.X = 9.000000000000000000
+                Size.Width = 182.000000000000000000
                 Size.Height = 25.000000000000000000
                 Size.PlatformDefault = False
                 TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.FontColor = claWhite
                 Text = 'Bairro:'
               end
               object REC_bairro: TRectangle
                 Align = Contents
+                Corners = [BottomLeft, BottomRight]
                 Cursor = crIBeam
                 Fill.Color = claWhite
                 HitTest = False
@@ -466,18 +564,37 @@
               Size.Height = 60.000000000000000000
               Size.PlatformDefault = False
               TabOrder = 9
+              object REC_cidade_upper: TRectangle
+                Align = Contents
+                Corners = [TopLeft, TopRight]
+                Fill.Color = xFF598AA9
+                HitTest = False
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 2.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 34.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 24.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 1.299999952316284000
+                XRadius = 8.000000000000000000
+                YRadius = 8.000000000000000000
+              end
               object LABEL_cidade: TLabel
                 Align = MostTop
-                StyledSettings = [Family, Style, FontColor]
-                Position.X = 6.000000000000000000
-                Size.Width = 185.000000000000000000
+                StyledSettings = [Family, Style]
+                Margins.Left = 3.000000000000000000
+                Position.X = 9.000000000000000000
+                Size.Width = 182.000000000000000000
                 Size.Height = 25.000000000000000000
                 Size.PlatformDefault = False
                 TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.FontColor = claWhite
                 Text = 'Cidade:'
               end
               object REC_cidade: TRectangle
                 Align = Contents
+                Corners = [BottomLeft, BottomRight]
                 Cursor = crIBeam
                 Fill.Color = claWhite
                 HitTest = False
@@ -514,6 +631,7 @@
                 Size.Height = 30.000000000000000000
                 Size.PlatformDefault = False
                 StyledSettings = [Family, Style, FontColor]
+                OnKeyDown = EDIT_cidadeKeyDown
               end
             end
             object LAYOUT_pais: TLayout
@@ -525,18 +643,37 @@
               Size.Height = 60.000000000000000000
               Size.PlatformDefault = False
               TabOrder = 12
+              object REC_pais_upper: TRectangle
+                Align = Contents
+                Corners = [TopLeft, TopRight]
+                Fill.Color = xFF598AA9
+                HitTest = False
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 2.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 34.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 24.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 1.299999952316284000
+                XRadius = 8.000000000000000000
+                YRadius = 8.000000000000000000
+              end
               object LABEL_país: TLabel
                 Align = MostTop
-                StyledSettings = [Family, Style, FontColor]
-                Position.X = 6.000000000000000000
-                Size.Width = 185.000000000000000000
+                StyledSettings = [Family, Style]
+                Margins.Left = 3.000000000000000000
+                Position.X = 9.000000000000000000
+                Size.Width = 182.000000000000000000
                 Size.Height = 25.000000000000000000
                 Size.PlatformDefault = False
                 TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.FontColor = claWhite
                 Text = 'Pa'#237's:'
               end
               object REC_pais: TRectangle
                 Align = Contents
+                Corners = [BottomLeft, BottomRight]
                 Cursor = crIBeam
                 Fill.Color = claWhite
                 HitTest = False
@@ -573,6 +710,7 @@
                 Size.Height = 30.000000000000000000
                 Size.PlatformDefault = False
                 StyledSettings = [Family, Style, FontColor]
+                OnKeyDown = EDIT_paisKeyDown
               end
             end
             object LAYOUT_estado: TLayout
@@ -584,18 +722,37 @@
               Size.Height = 60.000000000000000000
               Size.PlatformDefault = False
               TabOrder = 10
+              object REC_estado_upper: TRectangle
+                Align = Contents
+                Corners = [TopLeft, TopRight]
+                Fill.Color = xFF598AA9
+                HitTest = False
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 2.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 34.000000000000000000
+                Size.Width = 179.000000000000000000
+                Size.Height = 24.000000000000000000
+                Size.PlatformDefault = False
+                Stroke.Thickness = 1.299999952316284000
+                XRadius = 8.000000000000000000
+                YRadius = 8.000000000000000000
+              end
               object LABEL_estado: TLabel
                 Align = MostTop
-                StyledSettings = [Family, Style, FontColor]
-                Position.X = 6.000000000000000000
-                Size.Width = 185.000000000000000000
+                StyledSettings = [Family, Style]
+                Margins.Left = 3.000000000000000000
+                Position.X = 9.000000000000000000
+                Size.Width = 182.000000000000000000
                 Size.Height = 25.000000000000000000
                 Size.PlatformDefault = False
                 TextSettings.Font.Size = 14.000000000000000000
+                TextSettings.FontColor = claWhite
                 Text = 'Estado:'
               end
               object REC_estado: TRectangle
                 Align = Contents
+                Corners = [BottomLeft, BottomRight]
                 Cursor = crIBeam
                 Fill.Color = claWhite
                 HitTest = False
@@ -632,6 +789,7 @@
                 Size.Height = 30.000000000000000000
                 Size.PlatformDefault = False
                 StyledSettings = [Family, Style, FontColor]
+                OnKeyDown = EDIT_estadoKeyDown
               end
             end
           end
@@ -660,19 +818,40 @@
           Size.PlatformDefault = False
           TabOrder = 0
           TabStop = False
+          object REC_nome_upper: TRectangle
+            Align = Contents
+            Corners = [TopLeft, TopRight]
+            Fill.Color = xFF598AA9
+            HitTest = False
+            Margins.Left = 6.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 34.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Thickness = 1.299999952316284000
+            XRadius = 8.000000000000000000
+            YRadius = 8.000000000000000000
+          end
           object LABEL_nome: TLabel
             Align = MostTop
-            StyledSettings = [Style, FontColor]
-            Position.X = 6.000000000000000000
-            Size.Width = 358.000000000000000000
+            StyledSettings = [Style]
+            Margins.Left = 3.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Position.X = 9.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 355.000000000000000000
             Size.Height = 17.000000000000000000
             Size.PlatformDefault = False
             TextSettings.Font.Family = 'Corbel'
             TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.FontColor = claWhite
             Text = 'Nome:'
           end
           object REC_nome: TRectangle
             Align = Contents
+            Corners = [BottomLeft, BottomRight]
             Cursor = crIBeam
             Fill.Color = claWhite
             HitTest = False
@@ -709,6 +888,7 @@
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             StyledSettings = [Family, Style, FontColor]
+            OnKeyDown = EDIT_nomeKeyDown
           end
         end
         object LAYOUT_identidade: TLayout
@@ -722,19 +902,40 @@
           Size.Height = 60.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 1
+          object REC_identidade_upper: TRectangle
+            Align = Contents
+            Corners = [TopLeft, TopRight]
+            Fill.Color = xFF598AA9
+            HitTest = False
+            Margins.Left = 6.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 34.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Thickness = 1.299999952316284000
+            XRadius = 8.000000000000000000
+            YRadius = 8.000000000000000000
+          end
           object LABEL_identidade: TLabel
             Align = MostTop
-            StyledSettings = [Style, FontColor]
-            Position.X = 6.000000000000000000
-            Size.Width = 358.000000000000000000
+            StyledSettings = [Style]
+            Margins.Left = 3.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Position.X = 9.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 355.000000000000000000
             Size.Height = 17.000000000000000000
             Size.PlatformDefault = False
             TextSettings.Font.Family = 'Corbel'
             TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.FontColor = claWhite
             Text = 'Identidade:'
           end
           object REC_identidade: TRectangle
             Align = Contents
+            Corners = [BottomLeft, BottomRight]
             Cursor = crIBeam
             Fill.Color = claWhite
             HitTest = False
@@ -783,19 +984,40 @@
           Size.Height = 60.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 3
+          object REC_telefone_upper: TRectangle
+            Align = Contents
+            Corners = [TopLeft, TopRight]
+            Fill.Color = xFF598AA9
+            HitTest = False
+            Margins.Left = 6.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 34.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Thickness = 1.299999952316284000
+            XRadius = 8.000000000000000000
+            YRadius = 8.000000000000000000
+          end
           object LABEL_telefone: TLabel
             Align = MostTop
-            StyledSettings = [Style, FontColor]
-            Position.X = 6.000000000000000000
-            Size.Width = 358.000000000000000000
+            StyledSettings = [Style]
+            Margins.Left = 3.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Position.X = 9.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 355.000000000000000000
             Size.Height = 17.000000000000000000
             Size.PlatformDefault = False
             TextSettings.Font.Family = 'Corbel'
             TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.FontColor = claWhite
             Text = 'Telefone:'
           end
           object REC_telefone: TRectangle
             Align = Contents
+            Corners = [BottomLeft, BottomRight]
             Cursor = crIBeam
             Fill.Color = claWhite
             HitTest = False
@@ -847,20 +1069,41 @@
           Size.PlatformDefault = False
           TabOrder = 2
           TabStop = False
+          object REC_cpf_upper: TRectangle
+            Align = Contents
+            Corners = [TopLeft, TopRight]
+            Fill.Color = xFF598AA9
+            HitTest = False
+            Margins.Left = 6.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 34.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Thickness = 1.299999952316284000
+            XRadius = 8.000000000000000000
+            YRadius = 8.000000000000000000
+          end
           object LABEL_cpf: TLabel
             Align = MostTop
-            StyledSettings = [Style, FontColor]
-            Position.X = 6.000000000000000000
-            Size.Width = 358.000000000000000000
+            StyledSettings = [Style]
+            Margins.Left = 3.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Position.X = 9.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 355.000000000000000000
             Size.Height = 17.000000000000000000
             Size.PlatformDefault = False
             TextSettings.Font.Family = 'Corbel'
             TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.FontColor = claWhite
             Text = 'CPF:'
             TabStop = False
           end
           object REC_cpf: TRectangle
             Align = Contents
+            Corners = [BottomLeft, BottomRight]
             Cursor = crIBeam
             EnableDragHighlight = False
             Fill.Color = claWhite
@@ -912,20 +1155,41 @@
           Size.PlatformDefault = False
           TabOrder = 4
           TabStop = False
+          object REC_email_upper: TRectangle
+            Align = Contents
+            Corners = [TopLeft, TopRight]
+            Fill.Color = xFF598AA9
+            HitTest = False
+            Margins.Left = 6.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 6.000000000000000000
+            Margins.Bottom = 34.000000000000000000
+            Size.Width = 372.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Thickness = 1.299999952316284000
+            XRadius = 8.000000000000000000
+            YRadius = 8.000000000000000000
+          end
           object LABEL_email: TLabel
             Align = MostTop
-            StyledSettings = [Style, FontColor]
-            Position.X = 6.000000000000000000
-            Size.Width = 358.000000000000000000
+            StyledSettings = [Style]
+            Margins.Left = 3.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Position.X = 9.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 355.000000000000000000
             Size.Height = 17.000000000000000000
             Size.PlatformDefault = False
             TextSettings.Font.Family = 'Corbel'
             TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.FontColor = claWhite
             Text = 'Email:'
             TabStop = False
           end
           object REC_email: TRectangle
             Align = Contents
+            Corners = [BottomLeft, BottomRight]
             Cursor = crIBeam
             Fill.Color = claWhite
             HitTest = False
@@ -968,7 +1232,7 @@
   end
   object LAYOUT_lower: TLayout
     Align = MostBottom
-    Position.Y = 450.000000000000000000
+    Position.Y = 470.000000000000000000
     Size.Width = 800.000000000000000000
     Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
@@ -1376,11 +1640,5 @@
     UserAgent = 'Embarcadero URI Client/1.0'
     Left = 624
     Top = 8
-  end
-  object BindingsList: TBindingsList
-    Methods = <>
-    OutputConverters = <>
-    Left = 455
-    Top = 7
   end
 end

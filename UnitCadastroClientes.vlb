@@ -3,344 +3,396 @@ ModelLayerNames=
 EditingLayerName=
 
 [LAYOUT_endereço]
-Coordinates=260,0,108,33
+Coordinates=260,0,126,36
 
 [EDIT_cep]
-Coordinates=410,60,61,51
+Coordinates=410,60,71,58
 
 [LAYOUT_cep]
-Coordinates=260,180,80,33
+Coordinates=260,180,93,36
 
 [REC_background_color]
-Coordinates=1010,20,131,33
+Coordinates=1010,20,151,36
 
 [EDIT_complemento]
-Coordinates=410,20,110,51
+Coordinates=410,20,128,58
 
 [NetHTTPRequest]
-Coordinates=844,133,98,33
+Coordinates=844,133,115,36
 
 [REC_bairro]
-Coordinates=1180,580,70,33
+Coordinates=1180,580,82,36
 
 [StyleBook]
-Coordinates=392,461,64,33
+Coordinates=392,461,72,36
 
 [LogradouroColorAnimation]
-Coordinates=1025,111,149,33
+Coordinates=1025,111,168,36
 
 [EDIT_pais]
-Coordinates=410,140,64,51
+Coordinates=410,140,74,58
 
 [CircleFloatAnimation]
-Coordinates=1025,166,117,33
+Coordinates=1025,166,134,36
 
 [LABEL_numero]
-Coordinates=900,200,92,51
+Coordinates=900,200,105,58
 
 [LAYOUT_button_cancelar]
-Coordinates=1090,160,141,33
+Coordinates=1090,160,164,36
 
 [LAYOUT_confirmar_descrição]
-Coordinates=1110,180,163,33
+Coordinates=1110,180,189,36
 
 [BairroColorAnimation]
-Coordinates=1037,331,121,33
+Coordinates=1037,331,137,36
 
 [LAYOUT_center_body_right]
-Coordinates=1120,220,152,33
+Coordinates=1120,220,176,36
 
 [LABEL_confirmar_descrição]
-Coordinates=810,1,155,51
+Coordinates=810,1,177,58
 
 [LAYOUT_upper]
-Coordinates=1130,200,91,33
+Coordinates=1130,200,105,36
 
 [LAYOUT_cidade]
-Coordinates=260,60,95,33
+Coordinates=260,60,110,36
 
 [REC_separador]
-Coordinates=1130,260,91,33
+Coordinates=1130,260,106,36
 
 [LABEL_país]
-Coordinates=880,160,75,51
+Coordinates=880,160,85,58
 
 [LAYOUT_bairro]
-Coordinates=260,120,91,33
+Coordinates=260,120,106,36
 
 [NumeroColorAnimation]
-Coordinates=1037,441,130,33
+Coordinates=1037,441,148,36
 
 [NetHTTPClient]
-Coordinates=1072,496,86,33
+Coordinates=1072,496,101,36
 
 [LABEL_logradouro]
-Coordinates=870,140,108,51
+Coordinates=870,140,123,58
 
 [EDIT_bairro]
-Coordinates=410,40,72,51
+Coordinates=410,40,84,58
 
 [LABEL_cadastrar]
-Coordinates=910,280,100,51
+Coordinates=910,280,115,58
 
 [CidadeColorAnimation]
-Coordinates=1231,1,125,33
+Coordinates=1231,1,143,36
 
 [REC_numero]
-Coordinates=690,190,79,33
+Coordinates=690,190,92,36
 
 [REC_upper_color]
-Coordinates=1150,420,101,33
+Coordinates=1150,420,116,36
 
 [CepColorAnimation]
-Coordinates=943,557,111,33
+Coordinates=943,557,126,36
 
 [LAYOUT_endereço_right]
-Coordinates=550,0,136,33
+Coordinates=550,0,158,36
 
 [LABEL_cancelar]
-Coordinates=720,90,96,51
+Coordinates=720,90,110,58
 
 [LAYOUT_confirmar_saida]
-Coordinates=1000,0,141,33
+Coordinates=1000,0,164,36
 
 [EstadoColorAnimation]
-Coordinates=1231,166,125,33
+Coordinates=1231,166,143,36
 
 [LAYOUT_confirmar_buttons]
-Coordinates=1120,240,153,33
+Coordinates=1120,240,176,36
 
 [LAYOUT_loading]
-Coordinates=1160,540,99,33
+Coordinates=1160,540,114,36
 
 [LAYOUT_button_cadastrar]
-Coordinates=1030,40,146,33
+Coordinates=1030,40,169,36
 
 [ComplementoColorAnimation]
-Coordinates=1231,276,160,33
+Coordinates=1231,276,182,36
 
 [LAYOUT_confirmar_body]
-Coordinates=1120,340,140,33
+Coordinates=1120,340,161,36
 
 [EDIT_estado]
-Coordinates=410,80,76,51
+Coordinates=410,80,89,58
 
 [LAYOUT_endereço_left]
-Coordinates=1140,360,129,33
+Coordinates=1140,360,151,36
 
 [LAYOUT_número]
-Coordinates=260,200,100,33
+Coordinates=260,200,116,36
 
 [LAYOUT_sair]
-Coordinates=690,250,80,33
+Coordinates=690,250,93,36
 
 [LABEL_title]
-Coordinates=870,100,72,51
+Coordinates=870,100,82,58
 
 [LABEL_estado]
-Coordinates=720,70,87,51
+Coordinates=720,70,100,58
 
 [LAYOUT_logradouro]
-Coordinates=570,30,116,33
+Coordinates=570,30,134,36
 
 [REC_estado]
-Coordinates=1160,440,75,33
+Coordinates=1160,440,87,36
 
 [LAYOUT_body]
-Coordinates=690,230,87,33
+Coordinates=690,230,100,36
 
 [LABEL_complemento]
-Coordinates=820,20,121,51
+Coordinates=820,20,138,58
 
 [EDIT_cidade]
-Coordinates=410,160,76,51
+Coordinates=410,160,89,58
 
 [LABEL_cep]
-Coordinates=890,180,72,51
+Coordinates=890,180,82,58
 
 [REC_body_color]
-Coordinates=690,210,97,33
+Coordinates=690,210,111,36
 
 [REC_pais]
-Coordinates=1200,660,62,33
+Coordinates=1200,660,72,36
 
 [LAYOUT_button_não]
-Coordinates=1050,60,118,33
+Coordinates=1050,60,137,36
 
 [REC_cep]
-Coordinates=1170,480,59,33
+Coordinates=1170,480,69,36
 
 [EDIT_numero]
-Coordinates=410,100,81,51
+Coordinates=410,100,94,58
 
 [REC_complemento]
-Coordinates=1150,500,108,33
+Coordinates=1150,500,125,36
 
 [LAYOUT_button_sim]
-Coordinates=1060,80,117,33
+Coordinates=1060,80,135,36
 
 [LAYOUT_body_center]
-Coordinates=1070,100,123,33
+Coordinates=1070,100,143,36
 
 [REC_logradouro]
-Coordinates=1160,520,96,33
+Coordinates=1160,520,110,36
 
 [LABEL_bairro]
-Coordinates=870,120,83,51
+Coordinates=870,120,94,58
 
 [EDIT_logradouro]
-Coordinates=410,120,97,51
+Coordinates=410,120,112,58
 
 [REC_cidade]
-Coordinates=1180,560,74,33
+Coordinates=1180,560,86,36
 
 [REC_loading_background]
-Coordinates=1080,120,143,33
+Coordinates=1080,120,164,36
 
 [LABEL_cidade]
-Coordinates=720,50,87,51
+Coordinates=720,50,99,58
 
 [REC_button_sim]
-Coordinates=1180,640,97,33
+Coordinates=1180,640,111,36
 
 [LAYOUT_lower]
-Coordinates=1150,380,89,33
+Coordinates=1150,380,103,36
 
 [LAYOUT_complemento]
-Coordinates=260,80,129,33
+Coordinates=260,80,149,36
 
 [LAYOUT_estado]
-Coordinates=260,100,95,33
+Coordinates=260,100,111,36
 
 [REC_cancelar]
-Coordinates=1140,300,83,33
+Coordinates=1140,300,97,36
 
 [PaisColorAnimation]
-Coordinates=1451,496,112,33
+Coordinates=1451,496,128,36
 
 [LABEL_sim]
-Coordinates=910,240,72,51
+Coordinates=910,240,81,58
 
 [LAYOUT_pais]
-Coordinates=260,140,83,33
+Coordinates=260,140,96,36
 
 [REC_button_não]
-Coordinates=1140,320,97,33
+Coordinates=1140,320,113,36
 
 [LABEL_não]
-Coordinates=850,60,72,51
+Coordinates=850,60,83,58
 
 [CIRCLE_loading]
-Coordinates=1200,720,95,33
+Coordinates=1200,720,110,36
 
 [REC_confirmar_body_background]
-Coordinates=1080,140,184,33
+Coordinates=1080,140,211,36
 
 [REC_cadastrar]
-Coordinates=690,170,88,33
+Coordinates=690,170,102,36
 
 [REC_lower_color]
-Coordinates=1190,700,99,33
+Coordinates=1190,700,114,36
 
 [CancelarColorAnimation]
-Coordinates=1653,111,135,33
+Coordinates=1653,111,154,36
 
 [CadastrarColorAnimation]
-Coordinates=1653,166,139,33
+Coordinates=1653,166,159,36
 
 []
-Coordinates=1150,400,93,33
+Coordinates=168,169,84,36
 Visible=True
 ExplicitSubNodes=TabOrder
 LayerNames=
 
 [LINE_two]
-Coordinates=1190,620,61,33
+Coordinates=1190,620,70,36
 
 [LINE_one]
-Coordinates=1200,680,61,33
+Coordinates=1200,680,71,36
 
 [NãoColorAnimation]
-Coordinates=0,0,111,33
+Coordinates=0,0,126,36
 
 [SimColorAnimation]
-Coordinates=145,1,110,33
+Coordinates=145,1,125,36
 
 [LAYOUT_nome]
-Coordinates=10,0,116,51
+Coordinates=10,0,139,58
 Visible=True
 ExplicitSubNodes=ParentControl.TabOrder
 
 [EDIT_email]
-Coordinates=410,200,69,51
+Coordinates=410,200,82,58
 
 [EDIT_identidade]
-Coordinates=410,180,95,51
+Coordinates=410,180,110,58
 
 [REC_telefone]
-Coordinates=1220,740,81,33
+Coordinates=1220,740,94,36
 
 [LAYOUT_identidade]
-Coordinates=10,80,113,51
+Coordinates=10,80,132,58
 ExplicitSubNodes=TabOrder
 
 [TelefoneColorAnimation]
-Coordinates=1037,221,133,33
+Coordinates=1037,221,153,36
 
 [LAYOUT_cpf]
-Coordinates=10,140,77,51
+Coordinates=10,140,90,58
 ExplicitSubNodes=TabOrder
 
 [REC_cpf]
-Coordinates=1140,280,57,33
+Coordinates=1140,280,66,36
 
 [EmailColorAnimation]
-Coordinates=1037,386,119,33
+Coordinates=1037,386,135,36
 
 [LAYOUT_email]
-Coordinates=260,160,88,33
+Coordinates=260,160,103,36
 
 [CpfColorAnimation]
-Coordinates=140,582,108,33
+Coordinates=140,582,123,36
 
 [LABEL_identidade]
-Coordinates=900,220,105,51
+Coordinates=900,220,121,58
 
 [LABEL_telefone]
-Coordinates=830,40,93,51
+Coordinates=830,40,107,58
 
 [LABEL_email]
-Coordinates=900,260,80,51
+Coordinates=900,260,92,58
 
 [LAYOUT_center_body_left]
-Coordinates=1130,460,144,33
+Coordinates=1130,460,168,36
 
 [LineOneColorAnimation]
-Coordinates=1231,441,132,33
+Coordinates=1231,441,151,36
 
 [REC_email]
-Coordinates=1180,600,68,33
+Coordinates=1180,600,79,36
 
 [LABEL_cpf]
-Coordinates=920,300,69,51
+Coordinates=920,300,79,58
 
 [LAYOUT_telefone]
-Coordinates=10,200,101,51
+Coordinates=10,200,119,58
 ExplicitSubNodes=TabOrder
 
 [LineTwoColorAnimation]
-Coordinates=500,515,133,33
+Coordinates=500,515,151,36
 
 [EDIT_cpf]
-Coordinates=410,220,58,51
+Coordinates=410,220,68,58
 Visible=True
 
 [LABEL_nome]
-Coordinates=860,80,81,51
+Coordinates=860,80,93,58
 
 [EDIT_telefone]
-Coordinates=420,0,83,51
+Coordinates=420,0,97,58
 
-[BindingsList]
-Coordinates=168,169,76,33
+[NomeColorAnimation]
+Coordinates=671,296,137,36
+
+[REC_nome]
+Coordinates=391,296,80,36
+
+[IdentidadeColorAnimation]
+Coordinates=526,176,163,36
+
+[REC_identidade]
+Coordinates=562,296,108,36
+
+[EDIT_nome]
+Coordinates=168,56,83,58
+
+[REC_nome_upper]
+Coordinates=173,296,120,36
+
+[REC_identidade_upper]
+Coordinates=727,1,80,36
+
+[REC_cpf_upper]
+Coordinates=549,370,80,36
+
+[REC_telefone_upper]
+Coordinates=460,370,80,36
+
+[REC_email_upper]
+Coordinates=104,370,80,36
+
+[REC_cep_upper]
+Coordinates=727,351,87,36
+
+[REC_logradouro_upper]
+Coordinates=302,296,87,36
+Visible=True
+
+[REC_numero_upper]
+Coordinates=638,370,80,36
+
+[REC_complemento_upper]
+Coordinates=0,260,80,36
+
+[REC_bairro_upper]
+Coordinates=84,296,80,36
+
+[REC_cidade_upper]
+Coordinates=193,370,87,36
+
+[REC_estado_upper]
+Coordinates=371,370,80,36
+
+[REC_pais_upper]
+Coordinates=282,370,80,36
 

@@ -123,12 +123,24 @@ type
     REC_email: TRectangle;
     EmailColorAnimation: TColorAnimation;
     EDIT_email: TEdit;
-    BindingsList: TBindingsList;
     EDIT_nome: TEdit;
     REC_identidade: TRectangle;
     IdentidadeColorAnimation: TColorAnimation;
     REC_nome: TRectangle;
     NomeColorAnimation: TColorAnimation;
+    REC_nome_upper: TRectangle;
+    REC_identidade_upper: TRectangle;
+    REC_cpf_upper: TRectangle;
+    REC_telefone_upper: TRectangle;
+    REC_email_upper: TRectangle;
+    REC_bairro_upper: TRectangle;
+    REC_complemento_upper: TRectangle;
+    REC_pais_upper: TRectangle;
+    REC_estado_upper: TRectangle;
+    REC_numero_upper: TRectangle;
+    REC_logradouro_upper: TRectangle;
+    REC_cidade_upper: TRectangle;
+    REC_cep_upper: TRectangle;
 
     //Grupo de atividades: Sair da aplicação.
     procedure ConfirmarSaidaShow(Sender: TObject);
@@ -156,6 +168,14 @@ type
     procedure EDIT_telefoneKeyDown(Sender: TObject; var Key: Word;
       var KeyChar: Char; Shift: TShiftState);
     procedure EDIT_numeroKeyDown(Sender: TObject; var Key: Word;
+      var KeyChar: Char; Shift: TShiftState);
+    procedure EDIT_nomeKeyDown(Sender: TObject; var Key: Word;
+      var KeyChar: Char; Shift: TShiftState);
+    procedure EDIT_cidadeKeyDown(Sender: TObject; var Key: Word;
+      var KeyChar: Char; Shift: TShiftState);
+    procedure EDIT_estadoKeyDown(Sender: TObject; var Key: Word;
+      var KeyChar: Char; Shift: TShiftState);
+    procedure EDIT_paisKeyDown(Sender: TObject; var Key: Word;
       var KeyChar: Char; Shift: TShiftState);
 
   private
@@ -626,30 +646,54 @@ procedure TFormCadastroCliente.EDIT_identidadeKeyDown(Sender: TObject;
   var Key: Word; var KeyChar: Char; Shift: TShiftState);
 begin
 //não permitir que o identidade possua mais que 8 caracteres
-  if EDIT_identidade.Text.Length+1 > 8 then
-    KeyChar := #0;
+  if EDIT_identidade.Text.Length+1 > 8 then KeyChar := #0;
 
 //permitir apenas números no campo identidade
   if NOT (CharInSet(KeyChar,['0'..'9',#8])) then KeyChar := #0;
+end;
+
+procedure TFormCadastroCliente.EDIT_nomeKeyDown(Sender: TObject; var Key: Word;
+  var KeyChar: Char; Shift: TShiftState);
+begin
+//não permitir que o nome possua mais que 25 caracteres
+  if EDIT_nome.Text.Length+1 > 25 then KeyChar := #0;
+
+//permitir apenas letras, backspace e space no campo nome
+  if (NOT (CharInSet(KeyChar,['A'..'Z',#199, #8,#32])) and
+     (NOT (CharInSet(KeyChar,['a'..'z',#231])))) then KeyChar := #0;
+
+//primeira letra sempre em maiusculo, mesmo no sobrenome
+  if ((EDIT_nome.Text.Length = 0) or (EDIT_nome.Text[EDIT_nome.Text.Length] = ' '))
+    then KeyChar := AnsiUpperCase(KeyChar)[1];
 end;
 
 procedure TFormCadastroCliente.EDIT_numeroKeyDown(Sender: TObject;
   var Key: Word; var KeyChar: Char; Shift: TShiftState);
 begin
 //não permitir que o numero do endereço possua mais que 10 caracteres
-  if EDIT_numero.Text.Length+1 > 10 then
-    KeyChar := #0;
+  if EDIT_numero.Text.Length+1 > 10 then KeyChar := #0;
 
 //permitir apenas números no campo numero do endereço
   if NOT (CharInSet(KeyChar,['0'..'9',#8])) then KeyChar := #0;
+end;
+
+procedure TFormCadastroCliente.EDIT_paisKeyDown(Sender: TObject; var Key: Word;
+  var KeyChar: Char; Shift: TShiftState);
+begin
+//permitir apenas letras, backspace e space no campo pais
+  if (NOT (CharInSet(KeyChar,['A'..'Z',#199, #8,#32])) and
+     (NOT (CharInSet(KeyChar,['a'..'z',#231])))) then KeyChar := #0;
+
+//primeira letra sempre em maiusculo
+  if ((EDIT_pais.Text.Length = 0) or (EDIT_pais.Text[EDIT_pais.Text.Length] = ' '))
+    then KeyChar := AnsiUpperCase(KeyChar)[1];
 end;
 
 procedure TFormCadastroCliente.EDIT_telefoneKeyDown(Sender: TObject;
   var Key: Word; var KeyChar: Char; Shift: TShiftState);
 begin
 //não permitir que o telefone possua mais que 8 caracteres
-  if EDIT_telefone.Text.Length+1 > 11 then
-    KeyChar := #0;
+  if EDIT_telefone.Text.Length+1 > 11 then KeyChar := #0;
 
 //permitir apenas números no campo telefone
   if NOT (CharInSet(KeyChar,['0'..'9',#8])) then KeyChar := #0;
@@ -659,11 +703,33 @@ procedure TFormCadastroCliente.EDIT_cpfKeyDown(Sender: TObject; var Key: Word;
   var KeyChar: Char; Shift: TShiftState);
 begin
 //não permitir que o cpf possua mais que 11 caracteres
-  if EDIT_cpf.Text.Length+1 > 11 then
-    KeyChar := #0;
+  if EDIT_cpf.Text.Length+1 > 11 then KeyChar := #0;
 
 //permitir apenas números no campo cpf
   if NOT (CharInSet(KeyChar,['0'..'9',#8])) then KeyChar := #0;
 end;
 
+procedure TFormCadastroCliente.EDIT_estadoKeyDown(Sender: TObject;
+  var Key: Word; var KeyChar: Char; Shift: TShiftState);
+begin
+//permitir apenas letras, backspace e space no campo estado
+  if (NOT (CharInSet(KeyChar,['A'..'Z',#199, #8,#32])) and
+     (NOT (CharInSet(KeyChar,['a'..'z',#231])))) then KeyChar := #0;
+
+//primeira letra sempre em maiusculo
+  if ((EDIT_estado.Text.Length = 0) or (EDIT_estado.Text[EDIT_nome.Text.Length] = ' '))
+    then KeyChar := AnsiUpperCase(KeyChar)[1];
+end;
+
+procedure TFormCadastroCliente.EDIT_cidadeKeyDown(Sender: TObject;
+  var Key: Word; var KeyChar: Char; Shift: TShiftState);
+begin
+//permitir apenas letras, backspace e space no campo cidade
+  if (NOT (CharInSet(KeyChar,['A'..'Z',#199, #8,#32])) and
+     (NOT (CharInSet(KeyChar,['a'..'z',#231])))) then KeyChar := #0;
+
+//primeira letra sempre em maiusculo, mesmo no sobrenome
+  if ((EDIT_cidade.Text.Length = 0) or (EDIT_cidade.Text[EDIT_nome.Text.Length] = ' '))
+    then KeyChar := AnsiUpperCase(KeyChar)[1];
+end;
 end.
