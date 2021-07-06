@@ -9,8 +9,8 @@ Caso queira apenas testar a aplicação:
 ![image](https://user-images.githubusercontent.com/52551449/124604447-54b01b00-de41-11eb-9a90-f1d7857fa11f.png)
 
 4. Alguns detalhes sobre os campos:
-  4.1 O campo "Nome" apenas aceitará letras;
-  4.2 No campo "Identidade" apenas números serão aceitos e a quantiadade é baseada no "RG" (documento nacional de identificação civil no Brasil);
+   - O campo "Nome" apenas aceitará letras;
+   - No campo "Identidade" apenas números serão aceitos e a quantiadade é baseada no "RG" (documento nacional de identificação civil no Brasil);
   4.3 No campo "CPF" apenas números serão aceitos e a quantiadade é baseada documento referente ao cadastro de pessoas físicas;
   4.4 O campo "Telefone" aceitará apenas números;
   4.5 O campo "Email" aceitará qualquer caractere. Este campo é usado para enviar os dados deste formulário em formato "TXT" e "XML";
