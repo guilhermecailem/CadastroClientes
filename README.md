@@ -11,9 +11,9 @@ Caso queira apenas testar a aplicação:
 4. Alguns detalhes sobre os campos:
    - O campo "Nome" apenas aceitará letras;
    - No campo "Identidade" apenas números serão aceitos e a quantiadade é baseada no "RG" (documento nacional de identificação civil no Brasil);
-   - No campo "CPF" apenas números serão aceitos e a quantiadade é baseada documento referente ao cadastro de pessoas físicas;
+   - O campo "CPF" aceitára apenas números, e será validado por uma função presente na aplicação que determinará se o CPF existe ou não.
    - O campo "Telefone" aceitará apenas números;
-   - O campo "Email" aceitará qualquer caractere. Este campo é usado para enviar os dados deste formulário em formato "TXT" e "XML";
+   - O campo "Email" aceitará qualquer caractere. Este campo é usado para enviar os dados deste formulário em formato "TXT" e "XML". Este campo é validado pela bilbioteca OpenSSL durante a conexão feita previamente ao envio do email, e caso não seja um email válido, a conexão não será estabelecida e o formulário não vai prosseguir com o cadastro.
    - Para o campo "CEP", ao digitar o oitavo caractere, o recurso criado em thread consumirá dados da api "Via Cep" (https://viacep.com.br/). Os dados em "JSON", populam os campos "Logradouro", "Bairro", "Cidade", 'Estado", "País" e possivelmente o campo "Telefone". Caso o campo "Telefone" possua apenas 9 caracteres, o "DDD" da região do CEP pesquisado será incluído no inicio campo, completando os 11 digitos de um telefone brasileiro. 
    - O campo "Logradouro" aceitará qualquer caractere;
    - O campo "Número" aceitará apenas números;
