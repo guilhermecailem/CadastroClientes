@@ -3,7 +3,7 @@
 Caso queira apenas testar a aplicação:
 1. baixe o repositório, ou apenas a pasta "Debug";
 2. clique duas vezes no executável "Cailem.exe";
-  - Como se trata de um projeto "Debug" e não "Release", seu sistema operacional provavelmente irá alertar sobre a confiabilidade de fonte. Para prosseguir com o teste, é necessário "Confiar na fonte".
+   - Como se trata de um projeto "Debug" e não "Release", seu sistema operacional provavelmente irá alertar sobre a confiabilidade de fonte. Para prosseguir com o teste, é necessário "Confiar na fonte".
 
 3. Ao clicar no executável, a seguinte tela aparecerá:
 ![image](https://user-images.githubusercontent.com/52551449/124604447-54b01b00-de41-11eb-9a90-f1d7857fa11f.png)
